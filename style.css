@@ -5,24 +5,30 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body{
   font-family: 'Open Sans', 'Poppins', sans-serif;
 }
-.container{
+
+/* main section */
+main{
   background-image: url(/images/bg-desktop.svg);
   background-position: center;
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   padding: 50px;
 }
 
-.main img{
+/* logo image */
+.container img{
   width: 170px;
   padding-bottom: 40px;
 }
 
+
+/* hero section */
 .hero-section{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -31,10 +37,12 @@ body{
   column-gap: 50px;
 }
 
+/* hero section mockup image */
 .hero-section img{
   width: 100%;
 }
 
+/* write up */
 .build-community h1{
   font-size: 2.7em;
   font-family: 'Poppins';
@@ -48,6 +56,7 @@ body{
   padding-bottom: 22px;
 }
 
+/* button */
 .build-community button{
   padding: 12px;
   width: 34%;
@@ -58,6 +67,7 @@ body{
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
 }
 
+/* button hover */
 .build-community button:hover{
   background-color: hsl(300, 69%, 71%);
   color: white;
@@ -66,12 +76,14 @@ body{
   transition: 0.5s;
 }
 
+/* social icons container */
 footer .social-icons{
   display: flex;
   justify-content: flex-end;
   column-gap: 1em;
 }
 
+/* socia icons */
 footer .social-icons a i{
   border-radius: 50%;
   border: 1.8px solid white;
@@ -80,11 +92,14 @@ footer .social-icons a i{
   color: white;
   transition: 0.5s;
 }
+
+/* socia icons hover */
 footer .social-icons a i:hover{
   border: 1.8px solid hsl(300, 69%, 71%);
   color: hsl(300, 69%, 71%);
 }
 
+/* footer */
 .attribution{
   color: white;
 }
@@ -98,8 +113,11 @@ footer .social-icons a i:hover{
 }
 
 
-@media screen and (max-width: 400px) {
-  .container{
+/* media quieries */
+@media screen and (max-width: 900px) {
+
+  /* main body */
+  main{
     background-image: url(/images/bg-mobile.svg);
     background-position: center;
     background-size: cover;
@@ -108,11 +126,13 @@ footer .social-icons a i:hover{
     padding: 30px;
   }
   
-  .main img{
+  /* logo image */
+  .container img{
     width: 150px;
     padding-bottom: 40px;
   }
   
+  /* hero section */
   .hero-section{
     display: grid;
     grid-template-columns: 1fr;
@@ -120,13 +140,16 @@ footer .social-icons a i:hover{
     padding-bottom: 80px;
   }
   
+  /* hero section mockup image */
   .hero-section img{
     width: 100%;
   }
   
+  /* section write up */
   .build-community{
     text-align: center;
   }
+
   .build-community h1{
     font-size: 1.5em;
     padding-bottom: 22px;
@@ -136,6 +159,7 @@ footer .social-icons a i:hover{
     font-size: 16.5px;
   }
   
+  /* hero section button */
   .build-community button{
     align-items: center;
     padding: 12px;
@@ -147,6 +171,7 @@ footer .social-icons a i:hover{
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
   }
   
+  /* hero section hover */
   .build-community button:hover{
     background-color: hsl(300, 69%, 71%);
     color: white;
@@ -155,6 +180,7 @@ footer .social-icons a i:hover{
     transition: 0.5s;
   }
   
+  /* social icons container */
   footer .social-icons{
     display: flex;
     justify-content: center;
@@ -162,6 +188,7 @@ footer .social-icons a i:hover{
     padding-bottom: 30px;
   }
   
+  /* social icons */
   footer .social-icons a i{
     border-radius: 50%;
     border: 1.8px solid white;
@@ -170,11 +197,14 @@ footer .social-icons a i:hover{
     color: white;
     transition: 0.5s;
   }
+
+  /* social icons hover */
   footer .social-icons a i:hover{
     border: 1.8px solid hsl(300, 69%, 71%);
     color: hsl(300, 69%, 71%);
   }
   
+  /* footer */
   .attribution{
     color: white;
     text-align: center;
